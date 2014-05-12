@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config>
+
+<tds interface="udp">
+    <udp self="0.0.0.0" addr="127.0.0.1" port-in="4009" port-out="4010" />
+</tds>
+
+</config>

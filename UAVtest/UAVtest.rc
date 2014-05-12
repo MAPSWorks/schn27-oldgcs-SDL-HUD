@@ -1,0 +1,445 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian (Russia) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\UAVtest.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\UAVtest.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CONFIG DIALOGEX 0, 0, 231, 303
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Config"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Read",IDC_BTNREAD,174,261,50,14,BS_FLAT
+    PUSHBUTTON      "Write",IDC_BTNWRITE,174,282,50,14,BS_FLAT
+    PUSHBUTTON      "Load preset...",IDC_BTNLOAD,7,261,66,14,BS_FLAT
+    PUSHBUTTON      "Save preset...",IDC_BTNSAVE,7,282,66,14,BS_FLAT
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_ALIGNLEFT | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,7,7,217,247
+    EDITTEXT        IDC_EDIT1,184,238,40,14,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    CONTROL         "",IDC_PARAMPROGRESS,"msctls_progress32",WS_BORDER,83,272,80,12
+END
+
+IDD_ROUTE DIALOGEX 0, 0, 279, 300
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Route"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Read",IDC_BTNREAD,75,279,50,14,BS_FLAT
+    PUSHBUTTON      "Write",IDC_BTNWRITE,159,279,50,14,BS_FLAT
+    PUSHBUTTON      "Save KML...",IDC_BTNSAVEKML,206,7,66,14,BS_FLAT
+    PUSHBUTTON      "Load KML...",IDC_BTNLOADKML,7,7,66,14,BS_FLAT
+    CONTROL         "",IDC_LISTWPT,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_ALIGNLEFT | LVS_NOSORTHEADER | WS_TABSTOP,7,25,265,222,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDLAT,63,249,44,12,ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDLON,132,249,44,12,ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDALT,198,249,29,12,ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDNUM,20,249,21,12,ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "N:",IDC_STATIC,12,251,8,8
+    LTEXT           "Lat:",IDC_STATIC,48,251,14,8
+    LTEXT           "Lon:",IDC_STATIC,115,251,15,8
+    LTEXT           "Alt:",IDC_STATIC,185,251,12,8
+    PUSHBUTTON      "Set",IDC_BTNSETWPT,246,249,26,13
+    PUSHBUTTON      "Goto",IDC_BTNGOTOWPT,15,266,26,13
+END
+
+IDD_JOYCFG DIALOGEX 0, 0, 272, 212
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Joystick config"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,156,191,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,215,191,50,14
+    COMBOBOX        IDC_CMBJOY,7,7,258,55,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Ailerons:",IDC_STATIC,7,33,29,8
+    COMBOBOX        IDC_CMBAILERONS,42,32,51,47,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_PRGAILERONS,"msctls_progress32",PBS_SMOOTH,97,31,129,14
+    LTEXT           "Elevator:",IDC_STATIC,7,50,30,8
+    COMBOBOX        IDC_CMBELEVATOR,42,49,51,47,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_PRGELEVATOR,"msctls_progress32",PBS_SMOOTH,97,48,129,14
+    LTEXT           "Rudder:",IDC_STATIC,7,68,27,8
+    COMBOBOX        IDC_CMBRUDDER,42,66,51,45,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_PRGRUDDER,"msctls_progress32",PBS_SMOOTH,97,65,129,14
+    LTEXT           "Throttle:",IDC_STATIC,7,84,29,8
+    COMBOBOX        IDC_CMBTHROTTLE,42,83,51,47,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_PRGTHROTTLE,"msctls_progress32",PBS_SMOOTH,97,82,129,14
+    CONTROL         "Inv",IDC_CHKAILERONS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,232,33,27,10
+    CONTROL         "Inv",IDC_CHKELEVATOR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,232,50,27,10
+    CONTROL         "Inv",IDC_CHKRUDDER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,232,67,27,10
+    CONTROL         "Inv",IDC_CHKTHROTTLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,232,84,27,10
+    LTEXT           "Flaps0:",IDC_STATIC,8,106,24,8
+    COMBOBOX        IDC_CMBFLAPS0,42,105,51,50,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDFLAPS0,97,105,19,13,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Flaps1:",IDC_STATIC,8,124,24,8
+    COMBOBOX        IDC_CMBFLAPS1,42,123,51,52,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDFLAPS1,98,123,19,13,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Flaps2:",IDC_STATIC,8,142,24,8
+    COMBOBOX        IDC_CMBFLAPS2,42,141,51,49,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDFLAPS2,98,141,19,13,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDDEADZONE,49,165,40,14,ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Deadzone:",IDC_STATIC,8,168,36,8
+    LTEXT           "OIS lock:",IDC_STATIC,143,106,30,8
+    COMBOBOX        IDC_CMBOISLOCK,177,105,51,50,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDOISLOCK,233,105,19,13,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "OIS IR:",IDC_STATIC,143,124,25,8
+    COMBOBOX        IDC_CMBOISIR,177,123,51,52,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDOISIR,233,123,19,13,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+END
+
+IDD_ADSSET DIALOGEX 0, 0, 176, 68
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ADS set null point"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Set",IDOK,69,46,43,15
+    LTEXT           "Pressure:",IDC_STATIC,7,9,32,8
+    LTEXT           "Temp (° C):",IDC_STATIC,7,25,38,8
+    EDITTEXT        IDC_EDPRESSURE,62,7,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDTEMP,62,23,40,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Cancel",IDCANCEL,126,46,43,15
+    COMBOBOX        IDC_CMBVALUE,110,7,48,54,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_CONFIG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 224
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 296
+    END
+
+    IDD_ROUTE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 272
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 293
+    END
+
+    IDD_JOYCFG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 265
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 205
+    END
+
+    IDD_ADSSET, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 169
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 61
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_HORIZON_MSK         BITMAP                  "res\\horizon_msk.bmp"
+IDB_HORIZON             BITMAP                  "res\\horizon_bg.bmp"
+IDB_HORIZON_PITCH       BITMAP                  "res\\horizon_pitch.bmp"
+IDB_HORIZON_MSK2        BITMAP                  "res\\horizon_msk2.bmp"
+IDB_COMPAS              BITMAP                  "res\\compas_bg.bmp"
+IDB_COMPAS_MSK          BITMAP                  "res\\compas_msk.bmp"
+IDB_ALT                 BITMAP                  "res\\alt_bg.bmp"
+IDB_ALT_MSK             BITMAP                  "res\\alt_msk.bmp"
+IDB_VAR                 BITMAP                  "res\\var_bg.bmp"
+IDB_VAR_MSK             BITMAP                  "res\\var_msk.bmp"
+IDB_SPEED               BITMAP                  "res\\speed_bg.bmp"
+IDB_SPEED_MSK           BITMAP                  "res\\speed_msk.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU
+BEGIN
+    POPUP "ADS"
+    BEGIN
+        MENUITEM "Reset",                       ID_ADS_RESET
+        MENUITEM "Set null point",              ID_ADS_SETNULLPOINT
+    END
+    POPUP "Command"
+    BEGIN
+        MENUITEM "Futaba \t F2",                ID_COMMAND_FUTABA
+        MENUITEM "Manual \t F3",                ID_COMMAND_MANUAL
+        MENUITEM SEPARATOR
+        MENUITEM "Auto \t F1",                  ID_COMMAND_AUTO
+        MENUITEM "Engine start",                ID_COMMAND_ENGSTART
+        MENUITEM "Takeoff",                     ID_COMMAND_TAKEOFF
+        MENUITEM "Abort \t F8",                 ID_COMMAND_ABORT
+        MENUITEM SEPARATOR
+        MENUITEM "Emergency \t Ctrl+F12",       ID_COMMAND_EMERGENCY
+    END
+    POPUP "Window"
+    BEGIN
+        MENUITEM "Config",                      ID_WINDOW_CONFIG
+        MENUITEM "Route",                       ID_WINDOW_ROUTE
+        MENUITEM SEPARATOR
+        MENUITEM "Joystick config",             ID_WINDOW_JOYSTICKCONFIG
+    END
+END
+
+#endif    // Russian (Russia) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_UAVTEST_DIALOG DIALOGEX 0, 0, 545, 359
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "UAVtest"
+MENU IDR_MENU1
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Connect",IDC_BTNCONNECT,77,18,46,14,BS_FLAT
+    GROUPBOX        "Orientation",IDC_STATIC,7,77,107,62
+    GROUPBOX        "Air data",IDC_STATIC,7,141,107,62
+    LTEXT           "Pitch (°):",IDC_STATIC,13,105,30,8
+    EDITTEXT        IDC_INS_PITCH,78,103,32,14,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Roll (°):",IDC_STATIC,13,89,26,8
+    EDITTEXT        IDC_INS_ROLL,78,86,32,14,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Heading (°):",IDC_STATIC,13,122,40,8
+    EDITTEXT        IDC_INS_YAW,78,119,32,14,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "IAS (m/s):",IDC_STATIC,13,153,34,8
+    EDITTEXT        IDC_ADS_INDSPEED,77,151,32,14,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Baro alt (m):",IDC_STATIC,13,170,41,8
+    EDITTEXT        IDC_ADS_BAROALT,77,167,32,14,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "V_speed (m/s):",IDC_STATIC,13,186,50,8
+    EDITTEXT        IDC_ADS_VSPEED,77,183,32,14,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_RECVERR,173,18,46,14,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    GROUPBOX        "Position",IDC_STATIC,118,56,113,94
+    LTEXT           "Latitude (°):",IDC_STATIC,124,68,40,8
+    EDITTEXT        IDC_GPS_LATITUDE,173,65,48,14,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Longitude (°):",IDC_STATIC,124,84,46,8
+    EDITTEXT        IDC_GPS_LONGITUDE,173,81,48,14,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Altitude (m):",IDC_STATIC,125,100,41,8
+    EDITTEXT        IDC_GPS_ALTITUDE,173,97,48,14,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    GROUPBOX        "Engine",IDC_STATIC,118,152,113,67
+    LTEXT           "RPM:",IDC_STATIC,123,165,18,8
+    EDITTEXT        IDC_ENG_RPM,172,163,48,14,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Temp (°C):",IDC_STATIC,123,181,36,8
+    EDITTEXT        IDC_ENG_TEMP1,172,179,48,14,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    GROUPBOX        "Connection",IDC_STATIC,7,7,224,31
+    CONTROL         "",IDC_AVIAHORIZON,"Static",SS_BLACKRECT,340,15,103,94
+    CONTROL         "",IDC_COMPAS,"Static",SS_BLACKRECT,340,113,103,94
+    CONTROL         "",IDC_ALT,"Static",SS_BLACKRECT,449,113,89,79
+    CONTROL         "",IDC_VAR,"Static",SS_BLACKRECT,456,25,81,73
+    CONTROL         "",IDC_SPEED,"Static",SS_BLACKRECT,246,15,89,79
+    LTEXT           "Recv/Err:",IDC_STATIC,136,20,32,8
+    LTEXT           "GS (m/s):",IDC_STATIC,124,116,31,8
+    EDITTEXT        IDC_ADS_INDSPEED2,173,114,48,14,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Course (°):",IDC_STATIC,124,132,37,8
+    EDITTEXT        IDC_INS_YAW2,173,129,48,14,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    COMBOBOX        IDC_HDGSRC,367,212,48,70,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_SPDSRC,268,98,48,77,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_ALTSRC,471,196,48,57,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_SLIDER_THROTTLE,"msctls_trackbar32",TBS_VERT | TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,305,150,11,42,WS_EX_TRANSPARENT
+    CONTROL         "",IDC_SLIDER_AILERONS,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,288,194,42,10,WS_EX_TRANSPARENT
+    CONTROL         "",IDC_SLIDER_ELEVATOR,"msctls_trackbar32",TBS_VERT | TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,258,150,11,42,WS_EX_TRANSPARENT
+    CONTROL         "",IDC_SLIDER_RUDDER,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,240,194,45,9,WS_EX_TRANSPARENT
+    COMBOBOX        IDC_CMBFLAPS,253,214,60,61,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Ignition",IDC_CHKIGNITION,"Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,290,132,37,10
+    GROUPBOX        "Manual Control",IDC_STATIC,236,118,98,120
+    EDITTEXT        IDC_CONTROL,236,242,141,14,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_INFO,7,42,224,14,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_TRACK,467,7,71,14,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Direct alt (m):",IDC_STATIC,125,236,45,8
+    EDITTEXT        IDC_AUX_DIRECTALT,179,234,39,14,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_STATE,7,60,106,14,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    GROUPBOX        "Servo",IDC_STATIC,7,206,107,51
+    LTEXT           "Servo U (V):",IDC_STATIC,13,221,40,8
+    EDITTEXT        IDC_SERVOU,62,219,33,14,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Servo I (A):",IDC_STATIC,14,236,39,8
+    EDITTEXT        IDC_SERVOI,62,235,33,14,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_OISSTATE,383,242,155,14,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    CONTROL         "",IDC_LISTPOWERMODULES,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | LVS_NOSCROLL,7,273,224,77,WS_EX_STATICEDGE
+    GROUPBOX        "Aux",IDC_STATIC,118,222,113,35
+    LTEXT           "Fuel (%):",IDC_STATIC,123,197,32,8
+    EDITTEXT        IDC_ENG_FUELLEVEL,172,195,48,14,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Power modules:",IDC_STATIC,10,261,52,8
+    CONTROL         "",IDC_LISTFAILURES,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | LVS_NOSCROLL | LVS_NOCOLUMNHEADER,236,273,224,77,WS_EX_STATICEDGE
+    LTEXT           "Failures:",IDC_STATIC,239,260,28,8
+    EDITTEXT        IDC_ADDR,41,18,25,14,ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Addr:",IDC_STATIC,16,20,19,8
+    CONTROL         "",IDC_LISTSNLEVELS,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | LVS_NOSCROLL | LVS_NOCOLUMNHEADER,465,273,73,77,WS_EX_STATICEDGE
+    LTEXT           "Satellites:",IDC_STATIC,465,260,32,8
+    EDITTEXT        IDC_NSAT,506,257,32,14,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_UAVTEST_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 538
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 350
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "Transas Aviation"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "UAVtest.exe"
+            VALUE "LegalCopyright", "(c) 2013 Transas Aviation.  All rights reserved."
+            VALUE "OriginalFilename", "UAVtest.exe"
+            VALUE "ProductName", "UAVtest"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\UAVtest.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

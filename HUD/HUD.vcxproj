@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{78DA99FA-6BAC-4B55-807E-5DEA31A68913}</ProjectGuid>
+    <RootNamespace>HUD</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\pugixml\pugixml.cpp" />
+    <ClCompile Include="..\SerialPort\Rs232.cpp" />
+    <ClCompile Include="..\SerialPort\TcpTunnel.cpp" />
+    <ClCompile Include="..\SerialPort\UdpTunnel.cpp" />
+    <ClCompile Include="ahi.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="config.cpp" />
+    <ClCompile Include="crc.cpp" />
+    <ClCompile Include="DataXchg.cpp" />
+    <ClCompile Include="DigitalIndicator.cpp" />
+    <ClCompile Include="escapi.cpp" />
+    <ClCompile Include="Gauge.cpp" />
+    <ClCompile Include="hudwnd.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Thread.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\pugixml\pugiconfig.hpp" />
+    <ClInclude Include="..\pugixml\pugixml.hpp" />
+    <ClInclude Include="..\SDL\include\begin_code.h" />
+    <ClInclude Include="..\SDL\include\close_code.h" />
+    <ClInclude Include="..\SDL\include\SDL.h" />
+    <ClInclude Include="..\SDL\include\SDL_active.h" />
+    <ClInclude Include="..\SDL\include\SDL_audio.h" />
+    <ClInclude Include="..\SDL\include\SDL_byteorder.h" />
+    <ClInclude Include="..\SDL\include\SDL_cdrom.h" />
+    <ClInclude Include="..\SDL\include\SDL_config.h" />
+    <ClInclude Include="..\SDL\include\SDL_config_amiga.h" />
+    <ClInclude Include="..\SDL\include\SDL_config_dreamcast.h" />
+    <ClInclude Include="..\SDL\include\SDL_config_macos.h" />
+    <ClInclude Include="..\SDL\include\SDL_config_macosx.h" />
+    <ClInclude Include="..\SDL\include\SDL_config_minimal.h" />
+    <ClInclude Include="..\SDL\include\SDL_config_nds.h" />
+    <ClInclude Include="..\SDL\include\SDL_config_os2.h" />
+    <ClInclude Include="..\SDL\include\SDL_config_symbian.h" />
+    <ClInclude Include="..\SDL\include\SDL_config_win32.h" />
+    <ClInclude Include="..\SDL\include\SDL_copying.h" />
+    <ClInclude Include="..\SDL\include\SDL_cpuinfo.h" />
+    <ClInclude Include="..\SDL\include\SDL_endian.h" />
+    <ClInclude Include="..\SDL\include\SDL_error.h" />
+    <ClInclude Include="..\SDL\include\SDL_events.h" />
+    <ClInclude Include="..\SDL\include\SDL_getenv.h" />
+    <ClInclude Include="..\SDL\include\SDL_gfxBlitFunc.h" />
+    <ClInclude Include="..\SDL\include\SDL_gfxPrimitives.h" />
+    <ClInclude Include="..\SDL\include\SDL_gfxPrimitives_font.h" />
+    <ClInclude Include="..\SDL\include\SDL_joystick.h" />
+    <ClInclude Include="..\SDL\include\SDL_keyboard.h" />
+    <ClInclude Include="..\SDL\include\SDL_keysym.h" />
+    <ClInclude Include="..\SDL\include\SDL_loadso.h" />
+    <ClInclude Include="..\SDL\include\SDL_main.h" />
+    <ClInclude Include="..\SDL\include\SDL_mouse.h" />
+    <ClInclude Include="..\SDL\include\SDL_mutex.h" />
+    <ClInclude Include="..\SDL\include\SDL_name.h" />
+    <ClInclude Include="..\SDL\include\SDL_opengl.h" />
+    <ClInclude Include="..\SDL\include\SDL_platform.h" />
+    <ClInclude Include="..\SDL\include\SDL_quit.h" />
+    <ClInclude Include="..\SDL\include\SDL_rwops.h" />
+    <ClInclude Include="..\SDL\include\SDL_stdinc.h" />
+    <ClInclude Include="..\SDL\include\SDL_syswm.h" />
+    <ClInclude Include="..\SDL\include\SDL_thread.h" />
+    <ClInclude Include="..\SDL\include\SDL_timer.h" />
+    <ClInclude Include="..\SDL\include\SDL_types.h" />
+    <ClInclude Include="..\SDL\include\SDL_version.h" />
+    <ClInclude Include="..\SDL\include\SDL_video.h" />
+    <ClInclude Include="..\SerialPort\nullserialport.h" />
+    <ClInclude Include="..\SerialPort\Rs232.h" />
+    <ClInclude Include="..\SerialPort\serialport.h" />
+    <ClInclude Include="..\SerialPort\TcpTunnel.h" />
+    <ClInclude Include="..\SerialPort\UdpTunnel.h" />
+    <ClInclude Include="ahi.h" />
+    <ClInclude Include="buffer.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="config.h" />
+    <ClInclude Include="crc.h" />
+    <ClInclude Include="DataXchg.h" />
+    <ClInclude Include="DigitalIndicator.h" />
+    <ClInclude Include="escapi.h" />
+    <ClInclude Include="Gauge.h" />
+    <ClInclude Include="hudwnd.h" />
+    <ClInclude Include="sdlwrap.h" />
+    <ClInclude Include="Thread.h" />
+    <ClInclude Include="uavdata.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

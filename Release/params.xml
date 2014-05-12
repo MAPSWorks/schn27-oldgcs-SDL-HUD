@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<params>
+
+  <param id="0" name="Address" intvalue="true" desc="Адрес БЛА" />
+  <param id="1" name="Type" intvalue="true" desc="Тип БЛА (не используется)" />
+
+  <param id="2" name="Vcruise" color="0xFFEEEE" desc="Воздушная скорость на маршруте, км/ч" />
+  <param id="3" name="Vrotate" color="0xFFEEEE" desc="Воздушная скорость начала вращения при разбеге, км/ч" />
+  <param id="4" name="Vretract" color="0xFFEEEE" desc="Воздушная скорость уборки закрылков, км/ч" />
+  <param id="5" name="Vapproach" color="0xFFEEEE" desc="Воздушная скорост на глиссаде, км/ч" />
+
+  <param id="6" name="BaroAlt.Initial" desc="Баровысота первоначального набора, м" />
+  <param id="7" name="BaroAlt.Minimum" desc="Минимальная баровысота на глиссаде (переход в режим снижения по vy), м" />
+  <param id="8" name="BaroAlt.Parachute" desc="Баровысота выпуска парашюта, м" />
+
+  <param id="9" name="Elevator.Takeoff" color="0xEEEEEE" desc="Положение РВ во взлётной конфигурации" />
+  <param id="10" name="Elevator.Landing" color="0xEEEEEE" desc="Положение РВ в посадочной конфигурации" />
+  
+  <param id="11" name="Throttle.Idle" desc="Положение малого газа" />
+
+  <param id="12" name="Vmin" color="0xFFEEEE" desc="Минимальная воздушная скорость на маршруте, км/ч" />
+  <param id="13" name="Vmin.Pitch" color="0xFFEEEE" desc="Тангаж, если воздушная скорость < Vmin" />
+  
+  <param id="14" name="Pitch.Takeoff" color="0xEEFFEE" desc="Тангаж при взлёте" />
+  <param id="15" name="Pitch.Climb" color="0xEEFFEE" desc="Тангаж при первоначальном наборе" />
+  <param id="16" name="Pitch.Flare" color="0xEEFFEE" desc="Тангаж при выравнивании" />
+
+  <param id="17" name="VtakeoffStop" color="0xFFEEEE" desc="Воздушная скорость прекращения авторазбега (для тестирования)" />
+  <param id="18" name="TakeoffThrottle" color="0xFFEEEE" desc="Газ при авторазбеге (для тестирования)" />
+
+  <param id="19" name="Manual.MaxRoll" color="0xFFC0C0" desc="Ограничение крена в стабилизированном ручном режиме" />
+  <param id="20" name="Manual.MaxPitch" color="0xFFC0C0" desc="Ограничение тангажа в стабилизированном ручном режиме" />
+
+  <param id="21" name="Photo.Gap" color="0x70FF70" desc="Расстояние между центрами фотографирования, м" />
+  <param id="22" name="Photo.Begin" color="0x70FF70" desc="Точка маршрута начала фотографирования" />
+  <param id="23" name="Photo.End" color="0x70FF70" desc="Точка маршрута окончания фотографирования" />
+
+  <param id="24" name="Z.Offset" color="0xFF00FF" desc="Боковая коррекция при заходе на посадку" />
+  <param id="25" name="Airspeed.Deadzone" color="0xC0A0A0" desc="Мёртвая зона воздушной скорости, км/ч" />
+
+  <param id="26" name="Fuel.K" color="0xFFFF00" desc="Коэффициент пересчёта уровня топлива от тангажа" />
+  <param id="27" name="Fuel.Alpha" color="0xFFFF00" desc="Коэффициент lowpass фильтра уровня топлива" />
+
+  <param id="28" name="Vfbw" color="0xFFC0C0" desc="Воздушная скорость включения стабилизированного ручного режима, км/ч" />
+  <param id="29" name="Pitch2Throttle" color="0x00FFC0" desc="Коэффициент компенсации газа от тангажа" />
+
+  <param id="30" name="WRollToAileron.Kp" color="0x99EEEE" desc="ПИД-регулятор угловой скорости крена, Kp" />
+  <param id="31" name="WRollToAileron.Ki" color="0x99EEEE" desc="ПИД-регулятор угловой скорости крена, Ki" />
+  <param id="32" name="WRollToAileron.Kd" color="0x99EEEE" desc="ПИД-регулятор угловой скорости крена, Kd" />
+  <param id="33" name="WRollToAileron.Min" color="0x99EEEE" desc="ПИД-регулятор угловой скорости крена, Min (максимальное отклонение элеронов на левый крен)" />
+  <param id="34" name="WRollToAileron.Max" color="0x99EEEE" desc="ПИД-регулятор угловой скорости крена, Max (максимальное отклонение элеронов на правый крен)" />
+
+  <param id="35" name="WPitchToElevator.Kp" color="0xAAEEAA" desc="ПИД-регулятор угловой скорости тангажа, Kp" />
+  <param id="36" name="WPitchToElevator.Ki" color="0xAAEEAA" desc="ПИД-регулятор угловой скорости тангажа, Ki" />
+  <param id="37" name="WPitchToElevator.Kd" color="0xAAEEAA" desc="ПИД-регулятор угловой скорости тангажа, Kd" />
+  <param id="38" name="WPitchToElevator.Min" color="0xAAEEAA" desc="ПИД-регулятор угловой скорости тангажа, Min (максимальное отклонение РВ на пикирование)" />
+  <param id="39" name="WPitchToElevator.Max" color="0xAAEEAA" desc="ПИД-регулятор угловой скорости тангажа, Max (максимальное отклонение РВ на кабрирование)" />
+
+  <param id="40" name="WYawToRudder.Kp" color="0xBBEEEE" desc="ПИД-регулятор угловой скорости рысканья, Kp" />
+  <param id="41" name="WYawToRudder.Ki" color="0xBBEEEE" desc="ПИД-регулятор угловой скорости рысканья, Ki" />
+  <param id="42" name="WYawToRudder.Kd" color="0xBBEEEE" desc="ПИД-регулятор угловой скорости рысканья, Kd" />
+  <param id="43" name="WYawToRudder.Min" color="0xBBEEEE" desc="ПИД-регулятор угловой скорости рысканья, Min (максимальное отклонение РН влево)" />
+  <param id="44" name="WYawToRudder.Max" color="0xBBEEEE" desc="ПИД-регулятор угловой скорости рысканья, Max (максимальное отклонение РН вправо)" />
+
+  <param id="45" name="AltitudeToPitch.Kp" color="0xBBEEBB" desc="ПИД-регулятор баровысоты, Kp" />
+  <param id="46" name="AltitudeToPitch.Ki" color="0xBBEEBB" desc="ПИД-регулятор баровысоты, Ki" />
+  <param id="47" name="AltitudeToPitch.Kd" color="0xBBEEBB" desc="ПИД-регулятор баровысоты, Kd" />
+  <param id="48" name="AltitudeToPitch.Min" color="0xBBEEBB" desc="ПИД-регулятор баровысоты, Min (минимальный тангаж)" />
+  <param id="49" name="AltitudeToPitch.Max" color="0xBBEEBB" desc="ПИД-регулятор баровысоты, Max (максимальный тангаж)" />
+
+  <param id="50" name="VspeedToPitch.Kp" color="0x99EE99" desc="ПИД-регулятор вертикальной скорости, Kp" />
+  <param id="51" name="VspeedToPitch.Ki" color="0x99EE99" desc="ПИД-регулятор вертикальной скорости, Ki" />
+  <param id="52" name="VspeedToPitch.Kd" color="0x99EE99" desc="ПИД-регулятор вертикальной скорости, Kd" />
+  <param id="53" name="VspeedToPitch.Min" color="0x99EE99" desc="ПИД-регулятор вертикальной скорости, Min (минимальный тангаж)" />
+  <param id="54" name="VspeedToPitch.Max" color="0x99EE99" desc="ПИД-регулятор вертикальной скорости, Max (максимальный тангаж)" />
+
+  <param id="55" name="HeadingToRudder.Kp" color="0xEEEEEE" desc="ПИД-регулятор курса на разбеге, Kp" />
+  <param id="56" name="HeadingToRudder.Ki" color="0xEEEEEE" desc="ПИД-регулятор курса на разбеге, Ki" />
+  <param id="57" name="HeadingToRudder.Kd" color="0xEEEEEE" desc="ПИД-регулятор курса на разбеге, Kd" />
+  <param id="58" name="HeadingToRudder.Min" color="0xEEEEEE" desc="ПИД-регулятор курса на разбеге, Min (максимальное отклонение РН влево)" />
+  <param id="59" name="HeadingToRudder.Max" color="0xEEEEEE" desc="ПИД-регулятор курса на разбеге, Max (максимальное отклонение РН вправо)" />
+
+  <param id="60" name="IASToThrottle.Kp" color="0xFFEECC" desc="ПИД-регулятор воздушной скорости, Kp" />
+  <param id="61" name="IASToThrottle.Ki" color="0xFFEECC" desc="ПИД-регулятор воздушной скорости, Ki" />
+  <param id="62" name="IASToThrottle.Kd" color="0xFFEECC" desc="ПИД-регулятор воздушной скорости, Kd" />
+  <param id="63" name="IASToThrottle.Min" color="0xFFEECC" desc="ПИД-регулятор воздушной скорости, Min (минимальный газ, смещение -0.5)" />
+  <param id="64" name="IASToThrottle.Max" color="0xFFEECC" desc="ПИД-регулятор воздушной скорости, Max (максимальный газ, смещение -0.5)" />
+
+  <param id="65" name="Track.K1" color="0xFF00FF" desc="Регулятор бокового уклонения на маршруте, K1" />
+  <param id="66" name="Track.K2" color="0xFF00FF" desc="Регулятор бокового уклонения на маршруте, K2" />
+  <param id="67" name="TrackApp.K1" color="0xFF00FF" desc="Регулятор бокового уклонения на заходе, K1" />
+  <param id="68" name="TrackApp.K2" color="0xFF00FF" desc="Регулятор бокового уклонения на заходе, K2" />
+
+  <param id="69" name="Debug.Bits" color="0xFF8080" desc="Тестовые флаги (+1 - индикация положения флюгарок и уровня вибрации, +2 - индикация угловых скоростей, +4 - отключения фильтра СВС, +8 - режим проверки параметров регуляторов на автоколебания, +16 - выключение резервировния СВС через СНС)" />
+
+  <param id="70" name="RollToWRoll.Kp" color="0xEEEEEE" desc="П-регулятор крена, Kp" />
+  <param id="71" name="WRoll.Max" color="0xEEEEEE" desc="П-регулятор крена, Max (максимальная угловая скорость крена)" />
+  <param id="72" name="PitchToWPitch.Kp" color="0xEEEEEE" desc="П-регулятор тангажа, Kp" />
+  <param id="73" name="WPitch.Max" color="0xEEEEEE" desc="П-регулятор тангажа, Max (максимальная угловая скорость тангажа)" />
+  <param id="74" name="WStabilisation" color="0xEEEEEE" desc="Используемая конфигурация регуляторов крена/тангажа (0 - старая однокаскадная схема)" />
+
+  <param id="75" name="Futaba.Filter" color="0xFF8080" desc="Фильтр помех типа 'иголка' в каналах футабы" />
+  <param id="76" name="XTEToCourse.Kp" color="0xEEEEEE" desc="П-регулятор бокового уклонения при разбеге" />
+  <param id="77" name="DescendProfile" color="0xBBEEBB" desc="Профиль снижения (отношение высоты к расстоянию)" />
+
+  <param id="78" name="Eng.Start.Time1" color="0xFFFFFF" desc="Время 1й фазы прогрева двигателя" />
+  <param id="79" name="Eng.Start.Thr1" color="0xFFFFFF" desc="Газ для 1й фазы прогрева двигателя" />
+  <param id="80" name="Eng.Start.Time2" color="0xFFFFFF" desc="Время 2й фазы прогрева двигателя" />
+  <param id="81" name="Eng.Start.Thr2" color="0xFFFFFF" desc="Газ для 2й фазы прогрева двигателя" />
+  <param id="82" name="Eng.Start.Time3" color="0xFFFFFF" desc="Время 3й фазы прогрева двигателя" />
+  <param id="83" name="Eng.Start.Thr3" color="0xFFFFFF" desc="Газ для 3й фазы прогрева двигателя" />
+  <param id="84" name="Eng.Start.Temp" color="0xFFFFFF" desc="Температура окончания прогрева двигателя" />
+
+  <param id="85" name="RollToAileron.Kp" color="0x99EEEE" desc="ПИД-регулятор крена (для WStabilisation=0), Kp" />
+  <param id="86" name="RollToAileron.Ki" color="0x99EEEE" desc="ПИД-регулятор крена (для WStabilisation=0), Ki" />
+  <param id="87" name="RollToAileron.Kd" color="0x99EEEE" desc="ПИД-регулятор крена (для WStabilisation=0), Kd" />
+  <param id="88" name="RollToAileron.Min" color="0x99EEEE" desc="ПИД-регулятор крена (для WStabilisation=0), Min" />
+  <param id="89" name="RollToAileron.Max" color="0x99EEEE" desc="ПИД-регулятор крена (для WStabilisation=0), Max" />
+
+  <param id="90" name="PitchToElevator.Kp" color="0xAAEEAA" desc="ПИД-регулятор тангажа (для WStabilisation=0), Kp" />
+  <param id="91" name="PitchToElevator.Ki" color="0xAAEEAA" desc="ПИД-регулятор тангажа (для WStabilisation=0), Ki" />
+  <param id="92" name="PitchToElevator.Kd" color="0xAAEEAA" desc="ПИД-регулятор тангажа (для WStabilisation=0), Kd" />
+  <param id="93" name="PitchToElevator.Min" color="0xAAEEAA" desc="ПИД-регулятор тангажа (для WStabilisation=0), Min" />
+  <param id="94" name="PitchToElevator.Max" color="0xAAEEAA" desc="ПИД-регулятор тангажа (для WStabilisation=0), Max" />
+
+</params>

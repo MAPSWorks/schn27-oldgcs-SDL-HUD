@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="pugixml">
+      <UniqueIdentifier>{afc7caca-5ef1-47cd-bf49-0d62c7099640}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDL">
+      <UniqueIdentifier>{563db1a8-b920-47d1-9f35-5e126e8bf0a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SerialPort">
+      <UniqueIdentifier>{742b4def-0cf6-4da5-a5fc-fb67135fda3e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ahi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="config.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="crc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DataXchg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DigitalIndicator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="escapi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Gauge.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hudwnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Thread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pugixml\pugixml.cpp">
+      <Filter>pugixml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SerialPort\Rs232.cpp">
+      <Filter>SerialPort</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SerialPort\UdpTunnel.cpp">
+      <Filter>SerialPort</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SerialPort\TcpTunnel.cpp">
+      <Filter>SerialPort</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ahi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="buffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="crc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DataXchg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DigitalIndicator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="escapi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Gauge.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hudwnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="uavdata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SDL\include\begin_code.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SDL\include\close_code.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SDL\include\SDL.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SDL\include\SDL_active.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SDL\include\SDL_audio.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SDL\include\SDL_byteorder.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SDL\include\SDL_cdrom.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SDL\include\SDL_config.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SDL\include\SDL_config_amiga.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SDL\include\SDL_config_dreamcast.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SDL\include\SDL_config_macos.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SDL\include\SDL_config_macosx.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SDL\include\SDL_config_minimal.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SDL\include\SDL_config_nds.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SDL\include\SDL_config_os2.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SDL\include\SDL_config_symbian.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SDL\include\SDL_config_win32.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SDL\include\SDL_copying.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SDL\include\SDL_cpuinfo.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SDL\include\SDL_endian.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SDL\include\SDL_error.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SDL\include\SDL_events.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SDL\include\SDL_getenv.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SDL\include\SDL_gfxBlitFunc.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SDL\include\SDL_gfxPrimitives.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SDL\include\SDL_gfxPrimitives_font.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SDL\include\SDL_joystick.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SDL\include\SDL_keyboard.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SDL\include\SDL_keysym.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SDL\include\SDL_loadso.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SDL\include\SDL_main.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SDL\include\SDL_mouse.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SDL\include\SDL_mutex.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SDL\include\SDL_name.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SDL\include\SDL_opengl.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SDL\include\SDL_platform.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SDL\include\SDL_quit.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SDL\include\SDL_rwops.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SDL\include\SDL_stdinc.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SDL\include\SDL_syswm.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SDL\include\SDL_thread.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SDL\include\SDL_timer.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SDL\include\SDL_types.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SDL\include\SDL_version.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SDL\include\SDL_video.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\pugixml\pugiconfig.hpp">
+      <Filter>pugixml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\pugixml\pugixml.hpp">
+      <Filter>pugixml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SerialPort\nullserialport.h">
+      <Filter>SerialPort</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SerialPort\Rs232.h">
+      <Filter>SerialPort</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SerialPort\serialport.h">
+      <Filter>SerialPort</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SerialPort\UdpTunnel.h">
+      <Filter>SerialPort</Filter>
+    </ClInclude>
+    <ClInclude Include="sdlwrap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SerialPort\TcpTunnel.h">
+      <Filter>SerialPort</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UAVtest", "UAVtest\UAVtest.vcxproj", "{E7D3CEB7-341C-4FFD-8647-D82E03F29A55}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HUD", "HUD\HUD.vcxproj", "{78DA99FA-6BAC-4B55-807E-5DEA31A68913}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E7D3CEB7-341C-4FFD-8647-D82E03F29A55}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E7D3CEB7-341C-4FFD-8647-D82E03F29A55}.Debug|Win32.Build.0 = Debug|Win32
+		{E7D3CEB7-341C-4FFD-8647-D82E03F29A55}.Release|Win32.ActiveCfg = Release|Win32
+		{E7D3CEB7-341C-4FFD-8647-D82E03F29A55}.Release|Win32.Build.0 = Release|Win32
+		{78DA99FA-6BAC-4B55-807E-5DEA31A68913}.Debug|Win32.ActiveCfg = Debug|Win32
+		{78DA99FA-6BAC-4B55-807E-5DEA31A68913}.Debug|Win32.Build.0 = Debug|Win32
+		{78DA99FA-6BAC-4B55-807E-5DEA31A68913}.Release|Win32.ActiveCfg = Release|Win32
+		{78DA99FA-6BAC-4B55-807E-5DEA31A68913}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+EndGlobal

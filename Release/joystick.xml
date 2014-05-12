@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<config>
+  <device index="0" />
+  <axes deadzone="1000">
+    <aileron n="0" inverted="false" />
+    <elevator n="1" inverted="false" />
+    <rudder n="3" inverted="false" />
+    <throttle n="2" inverted="true" />
+  </axes>
+  <buttons>
+    <flaps0 n="6" />
+    <flaps1 n="5" />
+    <flaps2 n="4" />
+    <oislock n="0" />
+    <oisir n="1" />
+  </buttons>
+</config>
