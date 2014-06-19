@@ -73,9 +73,18 @@ void Rs232::init(void)
 	dcb.BaudRate = baudRate_;
 	dcb.ByteSize = 8;
 	dcb.fParity = FALSE;
+	dcb.Parity = NOPARITY;
 	dcb.StopBits = ONESTOPBIT;
 	dcb.fBinary = TRUE;
 	dcb.fAbortOnError = FALSE;
+	dcb.fOutxCtsFlow = FALSE;
+	dcb.fOutxDsrFlow = FALSE;
+	dcb.fRtsControl = RTS_CONTROL_DISABLE;
+	dcb.fDtrControl = DTR_CONTROL_DISABLE;
+	dcb.fInX = FALSE;
+	dcb.fOutX = FALSE;
+	dcb.fErrorChar = FALSE;
+	dcb.fNull = FALSE;
 	
 	success &= SetCommState(port_, &dcb) == TRUE;
 
@@ -87,8 +96,9 @@ void Rs232::init(void)
 	ct.WriteTotalTimeoutMultiplier = 1;
 	
 	success &= SetCommTimeouts(port_, &ct) == TRUE;
-
 	success &= SetupComm(port_, 1024, 1024) == TRUE;
+	success &= PurgeComm(port_, PURGE_RXCLEAR | PURGE_TXCLEAR) == TRUE;
+	success &= ClearCommError(port_, NULL, NULL);
 
 	if (!success)
 	{

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <config>
 
-<fcs iface="comz">
+<fcs iface="com">
     <iface name="com" type="serial" port="COM3" baudrate="57600" />
     <iface name="comz" type="serial" port="COM1" baudrate="115200" />
     <iface name="sim" type="udp" self="0.0.0.0" addr="127.0.0.1" port-in="4002" port-out="4001" />
@@ -17,6 +17,6 @@
 
 <datalinkmod value="0" />
 
-<!--log name="d:/protocol.log" /-->
+<!-- log name="d:/protocol.log" /-->
 
 </config>

@@ -807,7 +807,8 @@ bool DataXchg::Request(BYTE id, BYTE *sendBuf, BYTE sendLen, BYTE *recvBuf, BYTE
 {
 	std::vector<requestDescriptor> requests;
 	requests.push_back(requestDescriptor(id, sendBuf, sendLen, recvBuf, *recvLen));
-	Request(requests);
+	if (!Request(requests))
+		return false;
 	*recvLen = requests[0].recvLen;
 	return requests[0].result;
 }

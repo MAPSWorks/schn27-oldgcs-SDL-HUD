@@ -87,12 +87,19 @@ bool Protocol::receive(uint8_t &addr, uint8_t &id, int &size)
 	{
 		int n = rs_->read(buffer_ + 4, buffer_[2] - 4);
 
-		if ((n < buffer_[2] - 4) || (Crc8(buffer_, buffer_[2] - 1) != buffer_[buffer_[2] - 1]))
+		if (n < buffer_[2] - 4)
 		{
 			if (log_ != NULL)
-				*log_ << getTimeStr() << " " << "in BAD " << bytesToStr(buffer_, n) << std::endl;
+				*log_ << getTimeStr() << " " << "in TIMEOUT2 " << bytesToStr(buffer_, n) << std::endl;
 			return false;
 		}
+	}
+
+	if (Crc8(buffer_, buffer_[2] - 1) != buffer_[buffer_[2] - 1])
+	{
+		if (log_ != NULL)
+			*log_ << getTimeStr() << " " << "in BADCRC " << bytesToStr(buffer_, n) << std::endl;
+		return false;
 	}
 
 	addr = buffer_[0];
