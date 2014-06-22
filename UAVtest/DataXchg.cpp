@@ -690,7 +690,7 @@ void DataXchg::UpdateWpt()
 				m_wpt[index].altitude = static_cast<int16_t>(buffer.getUint16());
 
 				m_wptState[index] = 1;
-				
+
 				if (m_wpt[index].altitude == -32768)	// end of route
 					eofindex = index;
 
